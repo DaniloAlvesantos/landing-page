@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+      div#area {
+        background:rgb(4, 85, 160);
+        width:150px;
+        height:150px;
+        text-align:center;
+        line-height:150px;
+        color:white;
+        font:normal 20pt;
+        margin-left:300px;
+        box-shadow:5px 5px 5px 5px rgba(0, 0, 0, 0.719);
+      }
+    </style>
+</head>
+<body onload="carregar()" >
+   <!--- <div id="menu" >
+        <button onclick="click()" class="dropbtn">EX</button>
+        <div id="drop" class="drop-content">
+            <a href="#">https://www.youtube.com/</a>
+            <a href="#"> </a>
+            <a href="#"> </a>
+        </div>
+    </div> -->
+  <header>
+    <h1>Landing-page</h1>
+  </header>
+  <section>
+    <div id="img">
+
+    </div>
+    <div id="msg">
+        <img id="imagem" src="/New Project.png" alt="cidade">
+    </div>
+  </section>
+  <footer>
+
+    <marquee id="wel" > <strong> Welcome </strong></marquee>
+    
+    <!--<a href="https://wipsites.com.br"><button>Meu Botão</button></a>
+    <a href="https://wipsites.com.br"><button style="background: #069cc2; border-radius: 6px; padding: 15px; cursor: pointer; color: #fff; border: none; font-size: 16px;">Meu Botão</button></a>
+    -->
+    <!--
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    -->
+    <!---
+    <marquee behavior="" direction=""></marquee>
+    -->
+
+    <input id="sea" type="image" src="/sea of thives.jpg" alt="seaofthives">
+
+    <textarea name="city" id="text" cols="30" rows="10">
+      Os jogadores de Sea of Thieves poderão fazer a diferença no mundo enquanto se divertem. O navio Sails of Union está disponível para ser adquirido dentro do jogo e todo o lucro será revertido para pesquisas contra o câncer.
+      Todo em amarelo, o navio será inconfundível nos mares do jogo, parecendo uma estrela brilhando no oceano durante a noite. Como se não bastasse toda essa beleza, 100% do valor pago (75% se for adquirido pelo Steam) irá para a Stand Up to Cancer, uma organização de pesquisas sobre o câncer.
+
+    </textarea>
+
+
+    <a  href="https://www.pexels.com/pt-br/procurar/city/" ><button id="botao">fotos</button></a>
+
+    <div id="area">
+      click
+    </div>
+
+    
+    <select name="sel" id="seltab">
+
+    </select>
+
+
+    <p id="copy">&copy;landing-page D´s</p>
+  </footer>
+  <script>
+    var a = window.document.getElementById('area')
+    a.addEventListener('click',clicar)
+    a.addEventListener('mouseover',entrar)
+    function clicar() {
+      a.innerText = 'clicou'
+    }
+    function entrar() {
+      a.innerText = 'entrou'
+    }
+  </script>
+</body>
+</html>
