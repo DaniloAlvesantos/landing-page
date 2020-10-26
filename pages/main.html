@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+
+    <style> 
+    *{
+        padding:0;
+        margin:0;
+    }
+
+    body {
+    background-image:linear-gradient(70deg,blue,rgba(0, 255, 255, 0.609));
+    font:normal 25pt arial ;
+    color: white;
+    }
+
+    
+    </style>
+</head>
+<body>
+    
+    <div id="app"></div>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+
+  <script type="text/babel">
+  var Txt = React.createClass({
+    render: function () {
+      return (
+        <div>
+          <h1> Parte React </h1>
+          <span> Daqui pra frente so vai ter conteudo React </span>
+          </div>
+      )
+    }
+  })
+  
+  ReactDOM.render(
+          <Txt />,
+          document.getElementById('app')
+      )
+  
+  
+  </script>
+
+</body>
+</html>

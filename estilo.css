@@ -1,19 +1,18 @@
-body {
-    background:rgb(22, 98, 150);
-    font:normal 25pt arial ;
+*{
+    padding:0;
+    margin:0;
 }
-/*.dropbtn {
-    background:rgb(11, 133, 82);
-    color:white;
-    padding:16px;
-    font-size:16px;
-    border:none;
-    cursor:pointer;
-}*/
+
+body {
+    background-image:linear-gradient(180deg,blue,rgba(0, 255, 255, 0.609));
+    font:normal 25pt arial ;
+    color: white;
+}
 
 header {
     color:white;
     text-align:center;
+    margin-bottom:30px;
 }
 section {
     background:white;
@@ -21,6 +20,7 @@ section {
     padding:15px;
     width:500px;
     margin:auto;
+    margin-bottom:30px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
 }
 div {
@@ -34,14 +34,22 @@ footer {
     font-style: italic;
 }
 
+.span {
+    font-size:60px
+}
+
 #wel {
     font: italic 30pt;
     color:white;
 }
 
-#city {
+.main-city{
+    margin-top: 20px;
+    font:italic;
+}
+
+#txtct {
     margin:200px;
-    
 }
 
 
@@ -50,13 +58,14 @@ footer {
 }
 
 #copy {
-    color:rgb(125, 170, 117);
+    color:rgba(141, 152, 246, 0.883);
     font: italic;
+    margin-bottom: 20px;
 }
 
 
 #botao {
-    margin-left:400px;
+    margin-left:700px;
     margin-right:250px;
     background:#069cc2;
     border-radius:6px;
@@ -74,4 +83,32 @@ footer {
 
 #sea {
     margin:100px;
+}
+
+
+.insta{
+    margin-top:50px;
+    margin-right:300px;
+    width:50px;
+    height:50px;
+}
+
+.instagram{
+    margin-top: 150px;
+    margin-right: 600px;
+}
+
+.feedback{
+    margin-top:2px;
+    margin-right: 600px;
+}
+
+.Breact {
+    margin-top:20px;
+    margin-right:600px;
+    padding:15px;
+    background:#069cc2;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
 }
