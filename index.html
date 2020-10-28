@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="/CSS/estilo.css">
+    <link rel="stylesheet" href="/CSS/animation.css">
     <style>
       div#area {
         background:rgb(4, 85, 160);
@@ -16,8 +17,10 @@
         font:normal 20pt;
         margin-left:300px;
         box-shadow:5px 5px 5px 5px rgba(0, 0, 0, 0.719);
+        cursor: pointer;
       }
     </style>
+    <link rel="icon" href="./icons/logo-icon.png">
 </head>
 <body onload="carregar()" >
    <!--- <div id="menu" >
@@ -29,53 +32,68 @@
         </div>
     </div> -->
   <header>
-    <h1>Landing-page</h1>
+    <h1 class="animate-up" >Landing-page</h1>
   </header>
   <section>
     <div id="img">
 
     </div>
     <div id="msg">
-        <img id="imagem" src="/New Project.png" alt="cidade">
+        <img class="animate-up" id="imagem" src="/New Project.png" alt="cidade">
     </div>
+    
+   
   </section>
   <footer>
 
-    <marquee id="wel" > <strong> Novo titulo </strong></marquee>
-    
-    <!--<a href="https://wipsites.com.br"><button>Meu Botão</button></a>
-    <a href="https://wipsites.com.br"><button style="background: #069cc2; border-radius: 6px; padding: 15px; cursor: pointer; color: #fff; border: none; font-size: 16px;">Meu Botão</button></a>
-    -->
-    <!--
-    <textarea name="" id="" cols="30" rows="10"></textarea>
-    -->
-    <!---
-    <marquee behavior="" direction=""></marquee>
-    -->
+    <!--<marquee id="wel" > <strong> Welcome</strong></marquee>-->
 
-    <input id="sea" type="image" src="/sea of thives.jpg" alt="seaofthives">
+    <span class="span animate-up" >Welcome</span>
 
-    <textarea name="city" id="text" cols="30" rows="10">
+    <main class="main-city animate-up" >
+      This page
+        <br> is 
+       <br>focused 
+      <br>on cities
+      <div class="emoge">
+      </div>
+    </main>
+
+
+    <input class="animate-up" id="sea" type="image" src="/sea of thives.jpg" alt="seaofthives">
+
+    <textarea class="animate-up" name="txtct" id="textct" cols="30" rows="10">
       Os jogadores de Sea of Thieves poderão fazer a diferença no mundo enquanto se divertem. O navio Sails of Union está disponível para ser adquirido dentro do jogo e todo o lucro será revertido para pesquisas contra o câncer.
       Todo em amarelo, o navio será inconfundível nos mares do jogo, parecendo uma estrela brilhando no oceano durante a noite. Como se não bastasse toda essa beleza, 100% do valor pago (75% se for adquirido pelo Steam) irá para a Stand Up to Cancer, uma organização de pesquisas sobre o câncer.
 
     </textarea>
 
 
-    <a  href="https://www.pexels.com/pt-br/procurar/city/" ><button id="botao">fotos</button></a>
+    <a class="animate-up"  href="https://www.pexels.com/pt-br/procurar/city/" ><button id="botao">fotos</button></a>
 
-    <div id="area">
+    <div class="animate-up" id="area">
       click
     </div>
+  
 
-    
-      <div>
-        <button></button>
+    <div class="instagram animate-up" >
+      <a  href="https://www.instagram.com/danilodos9818/?hl=pt-br" title="instagram" >
+        <img src="./icons/instagram (1).png" alt="instagram">
+      </a>
+    </div>
+    <div class="feedback animate-up">
+      <br><a href="#" title="Feedback">
+        <img src="./icons/foursquare.png" alt="feedback">
+      </a>
     </div>
 
-
+    <div class="animate-up" >
+      <a href="./pages/main.html"><button class="Breact" > React </button></a>
+      <a href="./pages/index.html"><button class="Bindex">Modelo</button></a>
+    </div>
     <p id="copy">&copy;landing-page D´s</p>
   </footer>
+
   <script>
     var a = window.document.getElementById('area')
     a.addEventListener('click',clicar)
